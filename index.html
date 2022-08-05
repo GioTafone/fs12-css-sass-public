@@ -15,9 +15,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/2bcfc04ea5.js" crossorigin="anonymous"></script>
+    <title>Accessibility assignment Giovann</title>
   </head>
   <body>
-    <h1>Welcome to CSS assignment!</h1>
+    <header class="header">
+      <nav class="nav">
+        <img src="assets/images/logo-placeholder-image.png" alt="Logo image" width="70" height="70"/>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Tech Stack</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <main class="container">
+      <section>
+        <h1>My awesome title</h1>
+        <p>Some subtitle random texts repeated. Some subtitle texts repeated, some subtitle texts repeated. Some subtitle texts repeated.</p>
+        <img src="assets/images/img-1.jpg" alt="Main title image" width="250" height="150">
+      </section>
+      <hr>
+      <section>
+        <h2>Services</h2>
+        <article>
+          <h3 id="ser1">Service card 1</h3>
+          <p>Service card 1 random text</p>
+          <button class='btn' id="btser1" aria-labelledby="ser1 btser1">Go to Service 1</button>
+        <article>
+          <h3 id="ser2">Service card 2</h3>
+          <p>Service card 2 random text</p>
+          <button class='btn' id="btser2" aria-labelledby="ser2 btser2">Go to Service 2</button>
+        </article>
+        <article>
+          <h3 id="ser3">Service card 3</h3>
+          <p>Service card 3 random text</p>
+          <button class='btn' id="btser3" aria-labelledby="ser3 btser3">Go to Service 3</button>
+        </article>
+      </section>
+      <hr>
+      <section>
+        <h2>Tech stack</h2>
+        <i class="fab fa-js" title="javascript icon"></i>
+        <i class="fab fa-html5" title="html5 icon"></i>
+        <i class="fab fa-react" title="react icon"></i>
+        <i class="fab fa-sass" title="sass icon"></i>
+        <i class="fab fa-css3" title="css3 icon"></i>
+      </section>
+      <hr>
+      <section>
+        <h2>Blogs</h2>
+        <article>
+          <img src ="assets/images/img-1.jpg" alt="Blog 1 image" width="75" height="75"/>
+          <h3 id="blo1">Blog Article 1 title</h3>
+          <h4>Blog Article 1 subtitle</h4>
+          <p>Blog Article 1 excerpt</p>
+          <button class='btn' id="btblo1" aria-labelledby="blo1 btblo1">Go to Blog Article 1</button>
+        </article><br>
+        <article>
+          <img src ="assets/images/img-2.jpg" alt="Blog 2 image" width="75" height="75"/>
+          <h3 id="blo2">Blog Article b title</h3>
+          <h4>Blog Article b subtitle</h4>
+          <p>Blog Article b excerpt</p>
+          <button class='btn' id="btblo2" aria-labelledby="blo2 btblo2">Go to Blog Article b</button>
+        </article><br>
+        <article>
+          <img src ="assets/images/img-3.jpg" alt="Blog 3 image" width="75" height="75"/>
+          <h3 id="blo3">Blog Article c title</h3>
+          <h4>Blog Article c subtitle</h4>
+          <p>Blog Article c excerpt</p>
+          <button class='btn' id="btblo3" aria-labelledby="blo3 btblo3">Go to Blog Article c</button>
+        </article><br>
+      </section>
+      <hr>
+      <section>
+        <h2>Contact us</h2>
+        <form>
+          <label for="name">Your name</label>
+          <input type="text" placeholder="your name" id="name" required/>
+          <label for="email">Your Email</label>
+          <input type="email" placeholder="your email" id="email" required/><br>
+          <label for="message" >Leave a message</label>
+          <textarea placeholder="Your message" id="message" required></textarea><br>
+          <button class='btn' type="reset">Reset Form</button>
+          <button class='btn' type="submit">Submit Form</button>
+        </form>
+
+      </section>
+    </main>
+    <hr>
+    <footer>
+        <em>Copyright ©2022</em>
+        <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook" aria-hidden="true"></i>Go to facebook</a>
+        <a href="http://www.twitter.com/"><i class="fa-brands fa-twitter" aria-hidden="true"></i>Go to twitter</a>
+        <a href="http://www.youtube.com/"><i class="fa-brands fa-youtube" aria-hidden="true"></i>Go to youtube</a>
+        <a href="http://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>Go to linkedin</a>
+    </footer>
   </body>
 </html>

@@ -1,3 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import 'sass/config';
+@import 'sass/buttons';
+
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: $bg-color;
+   font-family: $font-stack;
+}
+
+.header {
+   background-color: $secondary-color;
+
+
+   nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     img {
+      margin-left: 50px;
+     }
+     
+
+
+     ul {
+      display: flex;
+      list-style-type: none;
+      margin-right: 50px;
+
+      li {
+         padding: 15px;
+      }
+
+      a {
+         text-decoration: none;
+         color: $primary-color;
+         font-weight: bold;
+      }
+
+      a:hover {
+         border-bottom: 5px solid $custom-red;
+         transition-duration: 300ms;
+      }
+
+
+
+     }
+   }
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+}
+
 h1 {
-   color: goldenrod;
+   color: black;
 }

@@ -1,0 +1,16 @@
+%btn {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 3px;
+    background-color: $bg-color;
+
+    &:hover {
+        background-color: $custom-red;
+        transition-duration: 300ms;
+        color: aliceblue;
+    }
+}
+
+.btn {
+    @extend %btn
+}
