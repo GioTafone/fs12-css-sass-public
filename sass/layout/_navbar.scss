@@ -1,0 +1,40 @@
+.header {
+    background-color: $secondary-color;
+ 
+ 
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+ 
+      img {
+       margin-left: 50px;
+      }
+      
+ 
+ 
+      ul {
+       display: flex;
+       list-style-type: none;
+       margin-right: 50px;
+ 
+       li {
+          padding: 15px;
+       }
+ 
+       a {
+          text-decoration: none;
+          color: $primary-color;
+          font-weight: bold;
+       }
+ 
+       a:hover {
+          border-bottom: 5px solid $custom-red;
+          transition-duration: 300ms;
+       }
+ 
+ 
+ 
+      }
+    }
+ }
