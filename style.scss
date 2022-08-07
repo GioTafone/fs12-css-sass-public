@@ -23,4 +23,59 @@ body {
    font-family: $font-stack, Arial, Helvetica, sans-serif;
    color: $primary-color;
    overflow-x: hidden;
+
 }
+
+.arrow-div{
+   display: flex;
+   justify-content: center;
+   margin: 50px;
+   padding: 50px;
+
+   svg{
+      width: 5%;
+      height: 5%;
+      opacity: 1;
+   }
+
+}
+
+
+#arrow:hover {
+   animation: arrow 2s ease-in-out infinite;   
+}
+
+@keyframes arrow {
+   20%, 80%{
+      opacity: 0.5;
+   }
+}
+
+.left {
+   animation: moving 2s ease-in-out infinite;
+}
+
+.right {
+   animation: moving 1s ease-in-out infinite;
+}
+
+.page {
+   animation: scrolling 1s ease-in-out infinite;
+}
+
+@keyframes scrolling {
+
+   20%, 80%{
+      opacity: 0;
+   }
+   
+}
+
+@keyframes moving {
+
+   20%, 80%{
+      transform: rotate(0.5deg);
+   }
+   
+}
+
