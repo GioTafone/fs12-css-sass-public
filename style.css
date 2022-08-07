@@ -210,6 +210,11 @@ nav ul a:hover {
   background-color: transparent;
   border: #636362 3px solid;
 }
+.form-layout ::placeholder {
+  color: #751a20;
+  font-size: 1.2rem;
+  font-family: "Roboto";
+}
 .form-layout-buttons {
   display: flex;
   justify-content: center;

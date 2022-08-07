@@ -29,7 +29,7 @@
                     border: $primary-color 3px solid;
                 }
             }
-
+            
             &-email{
                 display: flex;
                 flex-direction: column;
@@ -40,8 +40,9 @@
                     border: $primary-color 3px solid;
                 }
             }
-        }
 
+        }
+        
         &-message {
             display: flex;
             flex-direction: column;
@@ -56,6 +57,12 @@
                 border: $primary-color 3px solid;
             }
         }
+
+        ::placeholder {
+            color: $custom-red;
+            font-size: 1.2rem;
+            font-family: $font-stack;
+          }
 
         &-buttons{
             display: flex;
