@@ -16,103 +16,123 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://kit.fontawesome.com/2bcfc04ea5.js" crossorigin="anonymous"></script>
-    <title>Accessibility assignment Giovann</title>
+    <title>A11y assignment Giovanni</title>
   </head>
   <body>
-    <header class="header">
       <nav class="nav">
-        <img src="assets/images/logo-placeholder-image.png" alt="Logo image" width="70" height="70"/>
+        <img src="assets/images/logo-placeholder-image.png" alt="Logo image" width="90" height="90"/>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Tech Stack</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Form</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">TECH STACK</a></li>
+          <li><a href="#">BLOGS</a></li>
+          <li><a href="#">FORM</a></li>
         </ul>
       </nav>
-    </header>
-    <hr>
-    <main class="container">
-      <section>
-        <h1>My awesome title</h1>
-        <p>Some subtitle random texts repeated. Some subtitle texts repeated, some subtitle texts repeated. Some subtitle texts repeated.</p>
-        <img src="assets/images/img-1.jpg" alt="Main title image" width="250" height="150">
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>AWESOME TITLE</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, a id nesciunt reiciendis consequuntur quis nulla nihil quibusdam quia, eum obcaecati? Illum, eum perferendis sed debitis dolorum ipsum minima quo vero repellat sequi tempore consequuntur maxime. Corrupti cumque provident porro.</p>
+        </div>
+        <img src="assets/images/header.svg" alt="Main title image" width="500" height="500">
       </section>
-      <hr>
-      <section>
-        <h2>Services</h2>
-        <article>
-          <h3 id="ser1">Service card 1</h3>
-          <p>Service card 1 random text</p>
-          <button class='btn' id="btser1" aria-labelledby="ser1 btser1">Go to Service 1</button>
-        <article>
-          <h3 id="ser2">Service card 2</h3>
-          <p>Service card 2 random text</p>
-          <button class='btn' id="btser2" aria-labelledby="ser2 btser2">Go to Service 2</button>
-        </article>
-        <article>
-          <h3 id="ser3">Service card 3</h3>
-          <p>Service card 3 random text</p>
-          <button class='btn' id="btser3" aria-labelledby="ser3 btser3">Go to Service 3</button>
-        </article>
+      <section class="services">
+        <h2>SERVICES</h2>
+        <div class="services-article">
+          <article>
+            <h3 id="ser1">Service card 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsa labore commodi consequuntur maxime voluptas unde aut doloremque vel. Iste magnam explicabo blanditiis ipsum natus temporibus laudantium ad sint quos eius sit atque, repellat dolorum laborum excepturi officiis dolorem minus?</p>
+            <button class='btn' id="btser1" aria-labelledby="ser1 btser1">Go to Service 1</button>
+          </article>
+          <article>
+            <h3 id="ser2">Service card 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quas error. Culpa perspiciatis, repellat magnam cumque sunt natus laboriosam accusamus quod dicta optio? Repellat delectus eos nulla cum nisi labore maiores vero ut nobis, unde ipsam, distinctio exercitationem quidem explicabo.</p>
+            <button class='btn' id="btser2" aria-labelledby="ser2 btser2">Go to Service 2</button>
+          </article>
+          <article>
+            <h3 id="ser3">Service card 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad sunt iste esse numquam est tempore ab facere suscipit exercitationem ratione dignissimos voluptatum molestias incidunt impedit, sequi provident deleniti. In iusto expedita cumque quod officia aperiam praesentium dolores sequi autem?</p>
+            <button class='btn' id="btser3" aria-labelledby="ser3 btser3">Go to Service 3</button>
+          </article>
+        </div>
       </section>
-      <hr>
-      <section>
-        <h2>Tech stack</h2>
-        <i class="fab fa-js" title="javascript icon"></i>
-        <i class="fab fa-html5" title="html5 icon"></i>
-        <i class="fab fa-react" title="react icon"></i>
-        <i class="fab fa-sass" title="sass icon"></i>
-        <i class="fab fa-css3" title="css3 icon"></i>
+      <section class="techstack">
+        <h2>TECH STACK</h2>
+        <div class="techstack-icons">
+          <i class="fab fa-js fa-4x" title="javascript icon"></i>
+          <i class="fab fa-html5 fa-4x" title="html5 icon"></i>
+          <i class="fab fa-react fa-4x" title="react icon"></i>
+          <i class="fab fa-sass fa-4x" title="sass icon"></i>
+          <i class="fab fa-css3 fa-4x" title="css3 icon"></i>
+        </div>
       </section>
-      <hr>
-      <section>
-        <h2>Blogs</h2>
-        <article>
-          <img src ="assets/images/img-1.jpg" alt="Blog 1 image" width="75" height="75"/>
-          <h3 id="blo1">Blog Article 1 title</h3>
-          <h4>Blog Article 1 subtitle</h4>
-          <p>Blog Article 1 excerpt</p>
-          <button class='btn' id="btblo1" aria-labelledby="blo1 btblo1">Go to Blog Article 1</button>
-        </article><br>
-        <article>
-          <img src ="assets/images/img-2.jpg" alt="Blog 2 image" width="75" height="75"/>
-          <h3 id="blo2">Blog Article b title</h3>
-          <h4>Blog Article b subtitle</h4>
-          <p>Blog Article b excerpt</p>
-          <button class='btn' id="btblo2" aria-labelledby="blo2 btblo2">Go to Blog Article b</button>
-        </article><br>
-        <article>
-          <img src ="assets/images/img-3.jpg" alt="Blog 3 image" width="75" height="75"/>
-          <h3 id="blo3">Blog Article c title</h3>
-          <h4>Blog Article c subtitle</h4>
-          <p>Blog Article c excerpt</p>
-          <button class='btn' id="btblo3" aria-labelledby="blo3 btblo3">Go to Blog Article c</button>
-        </article><br>
+      <section class="blogs">
+        <h2>BLOGS</h2>
+        <div class="blogs-article">
+          <article>
+              <img src ="assets/images/img-1.jpg" alt="Blog 1 image" width="350" height="250"/>
+              <div class="article-blog">
+                <h3 id="blo1">Blog Article 1 title</h3>
+                <h4>Blog Article 1 subtitle</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos laudantium voluptatum corrupti? Fuga dolores laborum incidunt beatae? Modi perferendis suscipit accusamus est blanditiis atque esse ea excepturi qui, laboriosam laborum eius ad autem at quo culpa, impedit nemo aliquid quos rerum dignissimos consequuntur necessitatibus voluptate nostrum? Quo quisquam porro fugit odit aspernatur ab voluptatibus illo cum quam repudiandae, enim itaque temporibus obcaecati saepe impedit iure aliquid sint quod sed ipsam, dolores adipisci molestias in. Reiciendis, obcaecati. Saepe facere quia similique cum, quisquam laboriosam assumenda iste omnis maiores laborum. Dolores ea natus debitis ipsum maxime, voluptatum soluta laboriosam officiis! Ab, debitis!</p>
+                <button class='btn' id="btblo1" aria-labelledby="blo1 btblo1">Go to Blog Article 1</button>
+              </div>
+          </article>
+          <article>
+            <img src ="assets/images/img-2.jpg" alt="Blog 2 image" width="350" height="250"/>
+            <div class="article-blog">
+              <h3 id="blo2">Blog Article b title</h3>
+              <h4>Blog Article b subtitle</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellendus nobis aut, dignissimos placeat repudiandae exercitationem ipsam dolores assumenda, porro vero sunt rem reprehenderit fugit hic saepe sint nemo esse. Voluptatibus doloribus cupiditate ex. Enim officiis nihil veritatis quam, eveniet fuga ipsam quisquam itaque tempora, temporibus dolor soluta repudiandae cumque at asperiores architecto nisi pariatur totam. Recusandae aliquid saepe commodi cupiditate labore error doloribus eius blanditiis, animi dicta aut atque debitis nemo ratione dolores. Sunt rerum maxime quidem non omnis, rem labore eaque consequuntur accusamus tempora tempore molestias harum! Animi fuga praesentium dolores tempora dicta voluptate consequuntur dolorum nostrum corrupti!</p>
+              <button class='btn' id="btblo2" aria-labelledby="blo2 btblo2">Go to Blog Article b</button>
+            </div>
+          </article>
+          <article>
+            <img src ="assets/images/img-1.jpg" alt="Blog 3 image" width="350" height="250"/>
+            <div class="article-blog">
+              <h3 id="blo3">Blog Article c title</h3>
+              <h4>Blog Article c subtitle</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia optio debitis perspiciatis corporis nisi mollitia assumenda, voluptatibus consequuntur provident libero dolores quidem facilis beatae delectus quaerat impedit vel similique blanditiis aliquam ut cupiditate nemo! Modi cupiditate repellendus ducimus? Sapiente veniam eligendi nihil fugit architecto ea alias, voluptate est cum aut assumenda suscipit, quod et ad quos soluta at unde perferendis sed a hic in, voluptatem consequuntur? Suscipit sint illo animi ratione in nemo sapiente ipsam illum placeat non beatae explicabo incidunt maxime corrupti mollitia a quo voluptatibus, cumque, asperiores tenetur velit. Magnam ab beatae ad odit dolorem eius accusamus tenetur.</p>
+              <button class='btn' id="btblo3" aria-labelledby="blo3 btblo3">Go to Blog Article c</button>
+            </div>
+          </article>
+        </div>
       </section>
-      <hr>
       <section>
-        <h2>Contact us</h2>
-        <form>
-          <label for="name">Your name</label>
-          <input type="text" placeholder="your name" id="name" required/>
-          <label for="email">Your Email</label>
-          <input type="email" placeholder="your email" id="email" required/><br>
-          <label for="message" >Leave a message</label>
-          <textarea placeholder="Your message" id="message" required></textarea><br>
-          <button class='btn' type="reset">Reset Form</button>
-          <button class='btn' type="submit">Submit Form</button>
-        </form>
-
+        <div class="form">
+          <h2>CONTACT US</h2>
+          <form class="form-layout">
+            <div class="form-layout-inputs">
+              <div class="form-layout-inputs-name">
+                <label for="name">Your name</label>
+                <input type="text" placeholder="your name" id="name" required/>
+              </div>
+              <div class="form-layout-inputs-email">
+                <label for="email">Your Email</label>
+                <input type="email" placeholder="your email" id="email" required/>
+              </div>
+            </div>
+            <div class="form-layout-message">
+              <label for="message" >Leave a message</label>
+              <textarea placeholder="Your message" id="message" required></textarea>
+            </div>
+            <div class="form-layout-buttons">
+              <button class='btn' type="reset">Reset Form</button>
+              <button class='btn' type="submit">Submit Form</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
-    <hr>
     <footer>
         <em>Copyright ©2022</em>
-        <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook" aria-hidden="true"></i>Go to facebook</a>
-        <a href="http://www.twitter.com/"><i class="fa-brands fa-twitter" aria-hidden="true"></i>Go to twitter</a>
-        <a href="http://www.youtube.com/"><i class="fa-brands fa-youtube" aria-hidden="true"></i>Go to youtube</a>
-        <a href="http://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>Go to linkedin</a>
+        <div class="footer-icons">
+          <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl" aria-hidden="true"></i>Go to facebook</a>
+          <a href="http://www.twitter.com/"><i class="fa-brands fa-twitter fa-2xl" aria-hidden="true"></i>Go to twitter</a>
+          <a href="http://www.youtube.com/"><i class="fa-brands fa-youtube fa-2xl" aria-hidden="true"></i>Go to youtube</a>
+          <a href="http://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>Go to Linkedin</a>
+        </div>
     </footer>
   </body>
 </html>

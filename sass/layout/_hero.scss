@@ -1,0 +1,42 @@
+.hero {
+    display: flex;
+    min-height: 100vh;
+
+    &-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 25px;
+        padding: 25px;
+        
+        h1 {
+            font-size: 3rem;
+            padding-bottom: 40px;
+            color: $custom-red;
+
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    img {
+        margin: 25px;
+        min-width: 50vw;
+    }
+
+
+
+}
+
+
+@media all and (max-width: 900px) {
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+ 
+ }

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import 'sass/utilities/variables';
+@import 'sass/utilities/inheritance';
+@import 'sass/layout/navbar';
+@import 'sass/layout/hero';
+@import 'sass/layout/services';
+@import 'sass/layout/techstack';
+@import 'sass/layout/blogs';
+@import 'sass/layout/form';
+@import 'sass/layout/footer';
+@import 'sass/components/buttons';
 
 
 * {
@@ -9,16 +18,9 @@
 }
 
 body {
-   background-color: $bg-color;
+   width: auto;
+   background-color: $secondary-color;
    font-family: $font-stack, Arial, Helvetica, sans-serif;
    color: $primary-color;
+   overflow-x: hidden;
 }
-
-.container {
-   display: flex;
-   flex-direction: column;
-}
-
-
-@import 'sass/layout/navbar';
-@import 'sass/components/buttons';

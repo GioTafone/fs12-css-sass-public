@@ -1,0 +1,49 @@
+.services {
+    min-height: 100vh;
+    
+    h2 {
+        @extend %h2;
+    }
+
+    &-article {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 40px;
+
+        article {
+            border: $primary-color solid 3px;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            padding: 20px;
+            align-items: center;
+
+            h3{
+                @extend %h3;
+                margin-bottom: 15%;
+            }
+
+            p {
+                @extend %p;
+                margin-bottom: 15%;
+            }
+        }
+
+        .btn {
+            @extend %btn;
+        
+        }
+    }
+}
+
+@media all and (max-width: 900px) {
+    .services-article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+ 
+ }

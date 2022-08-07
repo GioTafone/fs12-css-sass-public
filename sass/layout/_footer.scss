@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: $primary-color solid 3px;
+    padding: 20px;
+    flex-wrap: wrap;
+
+    em{
+        margin-left: 9%;
+        padding: 10px 10px;
+        color: $custom-red;
+
+    }
+
+    .footer-icons{
+        margin-right: 9%;
+        
+    }
+    
+    a {
+        width: auto;
+        text-decoration: none;
+        color: $custom-red;
+        padding: 10px 10px
+
+     }
+
+ }
+ 

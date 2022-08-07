@@ -1,0 +1,14 @@
+.techstack{
+    margin: 10% 0;
+
+    h2{
+        @extend %h2;
+    }
+
+    &-icons {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10%;
+    }
+
+}
