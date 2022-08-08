@@ -28,7 +28,7 @@
                     @extend %inputs;
                     height: 100%;
                     background-color:transparent;
-                    border: $primary-color 3px solid;
+                    border: variables.$primary-color 3px solid;
                 }
             }
             
@@ -40,7 +40,7 @@
                     @extend %inputs;
                     height: 100%;
                     background-color:transparent;
-                    border: $primary-color 3px solid;
+                    border: variables.$primary-color 3px solid;
                 }
             }
 
@@ -58,14 +58,14 @@
                 width: 100%;
                 height: 25vh;
                 background-color:transparent;
-                border: $primary-color 3px solid;
+                border: variables.$primary-color 3px solid;
             }
         }
 
         ::placeholder {
-            color: $custom-red;
+            color: variables.$custom-red;
             font-size: 1.2rem;
-            font-family: $font-stack;
+            font-family: variables.$font-stack;
           }
 
         &-buttons{

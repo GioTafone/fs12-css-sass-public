@@ -4,7 +4,7 @@ nav {
    justify-content: space-between;
    flex-wrap: wrap;
    overflow: hidden;
-   background-color: $custom-red;
+   background-color: variables.$custom-red;
    width: 100vw;
 
    img {
@@ -24,14 +24,14 @@ nav {
    
       a {
          text-decoration: none;
-         color: $secondary-color;
+         color: variables.$secondary-color;
          font-weight: bold;
          font-size: large;
       }
       
       a:hover {
          transition-duration: 300ms;
-         border-bottom: 5px solid $secondary-color;
+         border-bottom: 5px solid variables.$secondary-color;
       }
    }
 }

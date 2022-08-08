@@ -313,12 +313,12 @@ body {
 }
 
 @keyframes scrolling {
-  20%, 80% {
+  10%, 90% {
     opacity: 0;
   }
 }
 @keyframes moving {
-  20%, 80% {
+  10%, 90% {
     transform: rotate(0.5deg);
   }
 }

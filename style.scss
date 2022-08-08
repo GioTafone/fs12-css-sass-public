@@ -1,5 +1,5 @@
+@use 'sass/utilities/variables';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import 'sass/utilities/variables';
 @import 'sass/utilities/inheritance';
 @import 'sass/layout/navbar';
 @import 'sass/layout/hero';
@@ -19,9 +19,9 @@
 
 body {
    width: auto;
-   background-color: $secondary-color;
-   font-family: $font-stack, Arial, Helvetica, sans-serif;
-   color: $primary-color;
+   background-color: variables.$secondary-color;
+   font-family: variables.$font-stack, Arial, Helvetica, sans-serif;
+   color: variables.$primary-color;
    overflow-x: hidden;
 
 }
@@ -65,7 +65,7 @@ body {
 
 @keyframes scrolling {
 
-   20%, 80%{
+   10%, 90%{
       opacity: 0;
    }
    
@@ -73,7 +73,7 @@ body {
 
 @keyframes moving {
 
-   20%, 80%{
+   10%, 90%{
       transform: rotate(0.5deg);
    }
    

@@ -10,7 +10,7 @@
     article {
         display: flex;
         margin: 15px;
-        border-bottom: $primary-color solid 3px;
+        border-bottom: variables.$primary-color solid 3px;
 
         img {
             margin: auto;

@@ -1,14 +1,14 @@
 footer {
     display: flex;
     justify-content: space-between;
-    border-top: $primary-color solid 3px;
+    border-top: variables.$primary-color solid 3px;
     padding: 20px;
     flex-wrap: wrap;
 
     em{
         margin-left: 9%;
         padding: 10px 10px;
-        color: $custom-red;
+        color: variables.$custom-red;
 
     }
 
@@ -20,7 +20,7 @@ footer {
     a {
         width: auto;
         text-decoration: none;
-        color: $custom-red;
+        color: variables.$custom-red;
         padding: 10px 10px
 
      }
