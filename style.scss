@@ -1,81 +1,75 @@
-@use 'sass/utilities/variables';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import 'sass/utilities/inheritance';
-@import 'sass/layout/navbar';
-@import 'sass/layout/hero';
-@import 'sass/layout/services';
-@import 'sass/layout/techstack';
-@import 'sass/layout/blogs';
-@import 'sass/layout/form';
-@import 'sass/layout/footer';
-@import 'sass/components/buttons';
-
+@use "sass/utilities/variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import "sass/utilities/inheritance";
+@import "sass/layout/navbar";
+@import "sass/layout/hero";
+@import "sass/layout/services";
+@import "sass/layout/techstack";
+@import "sass/layout/blogs";
+@import "sass/layout/form";
+@import "sass/layout/footer";
+@import "sass/components/buttons";
 
 * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-   width: auto;
-   background-color: variables.$secondary-color;
-   font-family: variables.$font-stack, Arial, Helvetica, sans-serif;
-   color: variables.$primary-color;
-   overflow-x: hidden;
-
+  width: auto;
+  background-color: variables.$secondary-color;
+  font-family: variables.$font-stack, Arial, Helvetica, sans-serif;
+  color: variables.$primary-color;
+  overflow-x: hidden;
 }
 
-.arrow-div{
-   display: flex;
-   justify-content: center;
-   margin: 50px;
-   padding: 50px;
+.arrow-div {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  padding: 50px;
 
-   svg{
-      width: 5%;
-      height: 5%;
-      opacity: 1;
-   }
-
+  svg {
+    width: 5%;
+    height: 5%;
+    opacity: 1;
+  }
 }
-
 
 #arrow:hover {
-   animation: arrow 2s ease-in-out infinite;   
+  animation: arrow 2s ease-in-out infinite;
 }
 
 @keyframes arrow {
-   20%, 80%{
-      opacity: 0.5;
-   }
+  20%,
+  80% {
+    opacity: 0.5;
+  }
 }
 
 .left {
-   animation: moving 2s ease-in-out infinite;
+  animation: moving 2s ease-in-out infinite;
 }
 
 .right {
-   animation: moving 1s ease-in-out infinite;
+  animation: moving 1s ease-in-out infinite;
 }
 
 .page {
-   animation: scrolling 1s ease-in-out infinite;
+  animation: scrolling 1s ease-in-out infinite;
 }
 
 @keyframes scrolling {
-
-   10%, 90%{
-      opacity: 0;
-   }
-   
+  10%,
+  90% {
+    opacity: 0;
+  }
 }
 
 @keyframes moving {
-
-   10%, 90%{
-      transform: rotate(0.5deg);
-   }
-   
+  10%,
+  90% {
+    transform: rotate(0.5deg);
+  }
 }
-

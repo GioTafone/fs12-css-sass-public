@@ -215,6 +215,16 @@ nav ul a:hover {
   background-color: transparent;
   border: #636362 3px solid;
 }
+.form-layout ::-moz-placeholder {
+  color: #751a20;
+  font-size: 1.2rem;
+  font-family: "Roboto";
+}
+.form-layout :-ms-input-placeholder {
+  color: #751a20;
+  font-size: 1.2rem;
+  font-family: "Roboto";
+}
 .form-layout ::placeholder {
   color: #751a20;
   font-size: 1.2rem;
@@ -292,7 +302,14 @@ body {
 }
 
 #arrow:hover {
-  animation: arrow 2s ease-in-out infinite;
+  -webkit-animation: arrow 2s ease-in-out infinite;
+          animation: arrow 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes arrow {
+  20%, 80% {
+    opacity: 0.5;
+  }
 }
 
 @keyframes arrow {
@@ -301,15 +318,24 @@ body {
   }
 }
 .left {
-  animation: moving 2s ease-in-out infinite;
+  -webkit-animation: moving 2s ease-in-out infinite;
+          animation: moving 2s ease-in-out infinite;
 }
 
 .right {
-  animation: moving 1s ease-in-out infinite;
+  -webkit-animation: moving 1s ease-in-out infinite;
+          animation: moving 1s ease-in-out infinite;
 }
 
 .page {
-  animation: scrolling 1s ease-in-out infinite;
+  -webkit-animation: scrolling 1s ease-in-out infinite;
+          animation: scrolling 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes scrolling {
+  10%, 90% {
+    opacity: 0;
+  }
 }
 
 @keyframes scrolling {
@@ -317,10 +343,13 @@ body {
     opacity: 0;
   }
 }
-@keyframes moving {
+@-webkit-keyframes moving {
   10%, 90% {
     transform: rotate(0.5deg);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
+@keyframes moving {
+  10%, 90% {
+    transform: rotate(0.5deg);
+  }
+}/*# sourceMappingURL=style.css.map */
