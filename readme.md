@@ -1,3 +1,3 @@
-# Welcome to CSS and SASS assignment
+# Sass first project
 
-please follow the instructions which you can find in index.html
+simple web page styled using SASS
